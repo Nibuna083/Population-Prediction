@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Population Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container animated-slide-in">
+        <h1>Predict World Population</h1>
+        <form action="/predict" method="post">
+            <label for="area">Area (km²):</label>
+            <input type="text" id="area" name="area" required><br><br>
+            
+            <label for="density">Density (per km²):</label>
+            <input type="text" id="density" name="density" required><br><br>
+            
+            <label for="growth_rate">Growth Rate:</label>
+            <input type="text" id="growth_rate" name="growth_rate" required><br><br>
+            
+            <input type="submit" class="button" value="Predict">
+        </form>
+    </div>
+</body>
+</html>

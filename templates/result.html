@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="result-container animated-pop-up">
+        <h1>Population Prediction Result</h1>
+        <p>The predicted population is: <span class="highlight">{{ prediction }}</span></p>
+        <a href="/" class="button back-button">Go back</a>
+    </div>
+</body>
+</html>
